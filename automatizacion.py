@@ -29,6 +29,8 @@ def getData():
         pass
     df = pd.read_csv(f'lic_{fecha}.csv', sep=";")
     df.to_excel(f'{anio}/{mes}/licitacion_{fecha}.xlsx', index=False)
+    os.remove(test_file_name)
+    os.remove(f'lic_{fecha}.csv')
     return True
 
 
