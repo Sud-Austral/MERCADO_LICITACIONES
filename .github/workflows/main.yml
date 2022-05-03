@@ -26,10 +26,8 @@ jobs:
 
     - name: AUTOMATIZACIÓN
       run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-
-        python automatizacion.py
+        echo "Hola"
+        
 
     - uses: stefanzweifel/git-auto-commit-action@v2
       with:
